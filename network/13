@@ -1,0 +1,1 @@
+The server type is an intranet server. According to https://www.speedguide.net/ip/10.51.1.253, some private IP address ranges "are reserved by IANA for private intranets and not routable to the Internet". The current range listed is: 10.0.0.0 ~ 10.255.255.255 (10.0.0.0/8 prefix
