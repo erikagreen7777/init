@@ -1,0 +1,2 @@
+#tentative
+iptables -A INPUT -i eth1 -s 10.0.0.0/8 -j ACCEPT
