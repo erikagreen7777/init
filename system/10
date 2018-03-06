@@ -1,2 +1,1 @@
-#tentative
-ls -l /dev/disk/by-label
+fdisk -l
