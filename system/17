@@ -1,2 +1,1 @@
-#tentative
-iptables -L
+sudo iptables -L
