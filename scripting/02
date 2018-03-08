@@ -1,4 +1,4 @@
-#!/sh/bin
+#!/bin/sh
 #You can totally just install `sudo apt-get install cron-apt` and it'll do everything for you, but that's probably not how 42 works, so:
 
 FILE="/var/log/update_script.log"
