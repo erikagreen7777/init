@@ -1,0 +1,17 @@
+#!/sh/bin
+#You can totally just install `sudo apt-get install cron-apt` and it'll do everything for you, but that's probably not how 42 works, so:
+
+FILE="/var/log/update_script.log"
+
+echo "***starting***"
+echo "aptitude update" >> ${FILE}
+aptitude update >> ${FILE}
+echo "" >> ${FILE}
+echo "aptitude full-upgrade" >> ${FILE}
+aptitude -y full-upgrade >> ${FILE}
+echo "" >> ${FILE}
+echo "aptitude clean" >> ${FILE}
+aptitude clean >> ${FILE}
+echo "all done!" >> ${FILE}
+echo "***success***"
+exit
