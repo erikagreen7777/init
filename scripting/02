@@ -1,3 +1,21 @@
+something ese:
+
+FILE="/var/log/update_script.log"
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+echo "***Starting package update process***"
+echo "apt-get -y pdate" >> ${FILE}
+apt-get -y update
+echo "apt-get -y upgrade" >> ${FILE}
+apt-get -y upgrade
+echo "Upgrade complete!" >> ${FILE}
+echo "chmod +x /home/erika/scripting/02" >> ${FILE}
+chmod +x /home/erika/scripting/02
+echo "0 4 * * 0 >> crontab" >> ${FILE}
+0 4 * * 0 /home/erika/scripting/02 >> /var/spool/cron/crontabs/
+echo "***Update scheduled successfully!***"
+
 #!/bin/sh
 #You can totally just install `sudo apt-get install cron-apt` and it'll do everything for you, but that's probably not how 42 works, so:
 
