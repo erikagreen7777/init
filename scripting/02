@@ -12,8 +12,8 @@ apt-get -y upgrade
 echo "Upgrade complete!" >> ${FILE}
 echo "chmod +x /home/erika/scripting/02" >> ${FILE}
 chmod +x /home/erika/scripting/02
-echo "0 4 * * 0 >> crontab" >> ${FILE}
-0 4 * * 0 /home/erika/scripting/02 >> /var/spool/cron/crontabs/
+echo "0 4 * * * >> /etc/crontab" >> ${FILE}
+0 4 * * * /home/erika/scripting/02 >> /etc/crontab
 echo "***Update scheduled successfully!***"
 
 #!/bin/sh
