@@ -1,1 +1,1 @@
-The server type is an intranet server. According to https://www.speedguide.net/ip/10.51.1.253, some private IP address ranges "are reserved by IANA for private intranets and not routable to the Internet". The current range listed is: 10.0.0.0 ~ 10.255.255.255 (10.0.0.0/8 prefix
+The server type is DHCP, or Dynamic Host Configuration Protocol. This enables a server to automatically assign an IP address to a computer from a defined range of numbers for a given network (cited from: https://kb.iu.edu/d/adov)
