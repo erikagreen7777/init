@@ -1,4 +1,4 @@
 #!/bin/sh
 
 FILE="$1"
-ls -S $FILE
+echo "$(ls -S $FILE)"
