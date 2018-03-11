@@ -1,1 +1,1 @@
-According to https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2, the file to store the RSA keys is: /home/erika/.ssh/id_rsa . Apparently, you can replace the "erika" with whatever your username is for the computer. 
+~/.ssh/authorized_keys 
