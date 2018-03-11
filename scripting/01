@@ -5,5 +5,5 @@ file=/etc/passwd
 IFS=':'
 while read -r username password UID GID UIDinfo home command
 do
-	printf "username: %s\npath: %s\nUID: %s\n" $username $home $UID
+	printf "%s:%s:%s\n" $username $UID $home
 done < "$file"
