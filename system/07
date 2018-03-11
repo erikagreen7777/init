@@ -1,1 +1,1 @@
-pgrep -f ssh
+ps au | grep ssh
